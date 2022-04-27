@@ -1,0 +1,10 @@
+[Unit]
+Description=proxy
+
+[Service]
+ExecStart=/etc/proxy
+Restart=always
+RuntimeMaxSec=1296000
+
+[Install]
+WantedBy=multi-user.target
